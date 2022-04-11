@@ -1,6 +1,7 @@
 import numpy as np
 from LosslessFunctions import region0
 from matplotlib import pyplot as plt
+from scipy.ndimage import uniform_filter
 
 M = 400  # the grid size
 m = 1  # it's normalized
@@ -21,6 +22,8 @@ for i in range(M):
     print(i)
 
 # reading the three region for 3 normalized l
+p = 5  # padding for smoothing out
+
 f1 = open('data/regions/norm_R_L1e2_appended.txt')
 f2 = open('data/regions/norm_R_L5e2_appended.txt')
 f3 = open('data/regions/norm_R_L10e2_appended.txt')
@@ -29,16 +32,25 @@ R1 = f1.read()
 R1 = R1.split()
 R1 = np.array(list(map(float, R1)))
 R1 = np.reshape(R1, (M, M))
+R1 = np.pad(R1, ((p, p), (p, p)), 'constant', constant_values=((-1, -1), (-1, -1)))
+R1 = uniform_filter(R1, size=p)
+R1 = R1[p:M+p, p:M+p]
 
 R2 = f2.read()
 R2 = R2.split()
 R2 = np.array(list(map(float, R2)))
 R2 = np.reshape(R2, (M, M))
+R2 = np.pad(R2, ((p, p), (p, p)), 'constant', constant_values=((-1, -1), (-1, -1)))
+R2 = uniform_filter(R2, size=p)
+R2 = R2[p:M+p, p:M+p]
 
 R3 = f3.read()
 R3 = R3.split()
 R3 = np.array(list(map(float, R3)))
 R3 = np.reshape(R3, (M, M))
+R3 = np.pad(R3, ((p, p), (p, p)), 'constant', constant_values=((-1, -1), (-1, -1)))
+R3 = uniform_filter(R3, size=p)
+R3 = R3[p:M+p, p:M+p]
 
 f1.close()
 f2.close()
