@@ -3,7 +3,7 @@ codes for calculating the lossless contours of doped highly mismatched alloys (H
 
 ## File Description
 ### `LosslessFunctions.py`
-> is a collection of all functions that calculate plasma frequency of a doped HMA and determines if it can become lossless at some doping level.
+> is a collection of all functions that calculate plasma frequency of a doped HMA and determine if it can become lossless at some doping level.
 ### `region_interband_collecting.py`
 > sweeps HMA parameter space for 3 different `\ell` and records the results in 3 different `.txt` files.
 ### `region_interband_plotting.py`
