@@ -5,7 +5,8 @@ from LosslessFunctions import region0, region
 res = 500
 M = 400
 m = 1
-Lm = 1973e-6 / m
+L0 = 1973e-6  # hbar / 2me*c in A
+Lm = L0 / m
 L = 1e2 * Lm
 Vx = np.linspace(0, 140e-3, M)
 Ed = np.linspace(-10e-3, 140e-3, M)
