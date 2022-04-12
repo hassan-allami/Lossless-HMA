@@ -13,7 +13,7 @@ codes for calculating the lossless contours of doped highly mismatched alloys (H
 > the already collected data for the 3 `\ell` used in the paper are included in the `data/regions` folder.
 > running `region_interband_plotting.py` as it is would use them to generate Fig. 3.
 
-_ to generate the lossless contour for a different `\ell`, `region_interband_collecting.py` should be modified accordingly. 
+**NOTE:** _to generate the lossless contour for a different `\ell`, `region_interband_collecting.py` should be modified accordingly._
 
 ## Dependencies
 numpy
