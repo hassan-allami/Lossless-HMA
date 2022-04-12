@@ -24,9 +24,9 @@ for i in range(M):
 # reading the three region for 3 normalized l
 p = 5  # padding for smoothing out
 
-f1 = open('data/regions/norm_R_L1e2_appended.txt')
-f2 = open('data/regions/norm_R_L5e2_appended.txt')
-f3 = open('data/regions/norm_R_L10e2_appended.txt')
+f1 = open('data/regions/norm_R_L1e2.txt')
+f2 = open('data/regions/norm_R_L5e2.txt')
+f3 = open('data/regions/norm_R_L10e2.txt')
 
 R1 = f1.read()
 R1 = R1.split()
