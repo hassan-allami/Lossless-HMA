@@ -16,10 +16,10 @@ R1 = np.zeros((M, M))
 R2 = np.zeros((M, M))
 R3 = np.zeros((M, M))
 
-f1 = open('data/regions/norm_R_L1e2_appended.txt', 'a')
-f2 = open('data/regions/norm_R_L5e2_appended.txt', 'a')
-f3 = open('data/regions/norm_R_L10e2_appended.txt', 'a')
-for i in range(235, M):
+f1 = open('data/regions/norm_R_L1e2.txt', 'a')
+f2 = open('data/regions/norm_R_L5e2.txt', 'a')
+f3 = open('data/regions/norm_R_L10e2.txt', 'a')
+for i in range(M):
     print(i)
     for j in range(M):
         R0[i, j] = region0(Vx[j], Ed[i], m)
