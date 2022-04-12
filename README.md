@@ -18,8 +18,11 @@ then `region_interband_plotting.py` should be modified to read from the collecte
 
 ## Dependencies
 numpy
+
 scipy
+
 matplotlib
+
 functools
 
 ## How to Use
