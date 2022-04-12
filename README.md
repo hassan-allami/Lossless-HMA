@@ -3,7 +3,7 @@ codes for calculating the lossless contours of doped highly mismatched alloys (H
 
 ## File Description
 ### LosslessFunctions.py
-is a collection of all functions that calculate $\omega_p$
+> is a collection of all functions that calculate $\omega_p$
 
 ## Dependencies
 numpy
