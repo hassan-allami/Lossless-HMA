@@ -17,7 +17,7 @@ codes for calculating the lossless contours of doped highly mismatched alloys (H
 then `region_interband_plotting.py` should be modified to read from the collected data.
 
 ## Dependencies
-numpy \n
-scipy
-matplotlib
+numpy  
+scipy  
+matplotlib  
 functools
