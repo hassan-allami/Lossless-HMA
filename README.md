@@ -18,6 +18,10 @@ codes for calculating the lossless contours of doped highly mismatched alloys (H
 > The already collected data for the 3 cases used in the paper are included in the `data/regions` folder.  
 > Running `region_interband_plotting.py` as it is would use them to generate Fig. 3.
 
+### `band-and-window.nb`
+> Sketches Fig. 1.  
+> Finds plasma frequency and sketches Fig. 2.
+
 **NOTE:** To generate the lossless contour for a different `\ell`, `region_interband_collecting.py` should be modified accordingly.
 Then `region_interband_plotting.py` should be modified to read from the collected data.  
 _On a typical laptop it takes several hours to to collect data for a single_ `\ell` _with the default resolution._
