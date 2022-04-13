@@ -19,6 +19,7 @@ codes for calculating the lossless contours of doped highly mismatched alloys (H
 > Running `region_interband_plotting.py` as it is would use them to generate Fig. 3.
 
 ### `band-and-window.nb`
+> Mathematica notebook:  
 > Sketches Fig. 1.  
 > Finds plasma frequency and sketches Fig. 2.
 
@@ -28,7 +29,7 @@ _On a typical laptop it takes several hours to to collect data for a single_ `\e
 _The resolution is adjustable._
 
 
-## Dependencies
+## Pyhton Required Libraries
 ```
 numpy  
 scipy  
